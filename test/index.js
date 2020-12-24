@@ -57,13 +57,13 @@ test('degree underflow', ({is, end})  => {
     end();
 })
 
-test('max constraint', ({is, end})  => {
+test('max constraint', ({ is, end }) => {
     const expected = hsl(0, 101, 50);
     const actual = hsl(0, 100, 50);
     const it = '101% should be the same as 100%';
     is(actual, expected, it);
     end();
-})
+});
 
 test('max constraint', ({is, end})  => {
     const expected = hsl(0, -1, 50);
